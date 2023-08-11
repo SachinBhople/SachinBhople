@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --theme: #714294
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .header {
+            height: 150px;
+            background-color: var(--theme);
+        }
+
+        .card {
+            border: 2px solid var(--theme);
+            width: 400px;
+            height: 500px;
+            margin: -130px auto 0px;
+        }
+
+        .card-header {
+            background-image: url(assets/images/background.svg);
+            height: 130px;
+            color: white;
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body span {
+            background-color: var(--theme);
+            color: white;
+            padding: 5px;
+            width: 100px;
+            text-transform: capitalize;
+        }
+
+        .card-body input {
+            width: 100%;
+            transition: 300ms;
+        }
+
+        .card-body input:hover {
+
+            transform: scale(1.1);
+        }
+
+        .card-body p {
+            margin: 10px 0;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .card button {
+            width: 100%;
+            background-color: var(--theme);
+            color: white;
+            padding: 10px;
+            text-transform: capitalize;
+            border: none;
+        }
+
+        .d {
+
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header"> </div>
+    <div class="card">
+
+        <div class="card-header">
+            <h1>Secure Login</h1>
+            <p>Powerd By SKILLHUB</p>
+        </div>
+
+        <div class="card-body">
+            <div class="d-flex">
+                <span>Username</span>
+                <input type="text">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="d-flex">
+                <span>class pin</span>
+                <input type="text">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p> <a class="f">Dont have pin ?</a>
+            <div class="d-flex">
+                <span>password</span>
+                <input type="password">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <button>login</button>
+
+            <a class="d" href="">Trouble login</a>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
